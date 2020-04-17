@@ -1,0 +1,9 @@
+Bibliotecas a parte utilizadas
+{}=não está mais sendo utilizada
+
+npm install native-base --save
+react-native link
+npm install react-native-elements
+
+{npm i react-native-keyboard-aware-scrollview --save
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scrollview';}
