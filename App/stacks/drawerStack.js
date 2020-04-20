@@ -6,15 +6,13 @@ import DrawerScreen from './drawerScreen';
 
 const DrawerNavigation = createStackNavigator({
     DrawerStack: {screen: DrawerScreen}
-},{
+})
+
+DrawerNavigation.navigationOptions={
+    title:"aaaaaaaaaa",
     headerMode:'float',
     navigationOptions: ({navigation}) => ({
-        headerStyle:{
-            backgroundColor:'lightGreen',
-            paddingLeft:10,
-            paddingRight: 10,
-        },
-        headerLeft: <View>
+        headerRight: () => <View>
             <TouchableHighlight
                 onPress={() => {
                     if(navigation.state.index === 0){
@@ -27,6 +25,6 @@ const DrawerNavigation = createStackNavigator({
             </TouchableHighlight>
         </View>
     })
-})
+}
 
 export default DrawerNavigation;

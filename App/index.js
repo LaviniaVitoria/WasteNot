@@ -6,7 +6,6 @@ import { createAppContainer } from 'react-navigation';
 const Navigator = createStackNavigator({
     drawerStack: {screen:DrawerStack}
 }, {
-    headerMode:'none',
     initialRouteName: 'drawerStack'
 })
 

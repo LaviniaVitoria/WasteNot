@@ -34,10 +34,11 @@ const FadeInView = (props) => { // efeito de fade in
 
 
 
-
-
-
 class LoginScreen extends React.Component {
+
+  static navigationOptions = {
+    title: 'Seja Bem-vindo!',
+  };
 
   clicou= () => {
     Alert.alert("Bem-vindo!", "login efetuado com sucesso");
@@ -98,7 +99,7 @@ const RootStack = createStackNavigator(
     TelaCadastro: Cadastro,
   },
   {
-    initialRouteName: 'Login',
+    
   }
 );
 
@@ -109,7 +110,6 @@ export default class App extends React.Component {
     return <AppContainer />;
   }
 }
-
 
 const styles = StyleSheet.create({
   container: {
