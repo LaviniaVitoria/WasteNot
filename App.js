@@ -38,6 +38,10 @@ class LoginScreen extends React.Component {
 
   static navigationOptions = {
     title: 'Seja Bem-vindo!',
+    headerStyle: {
+      backgroundColor: '#aeead3',
+    }, 
+    headerTintColor: 'green',
   };
 
   clicou= () => {

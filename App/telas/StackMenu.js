@@ -6,7 +6,6 @@ import DrawerStack from '../stacks/drawerStack.js';
 const Navigator = createStackNavigator({
     drawerStack: {screen:DrawerStack}
 }, {
-    headerMode:'none',
     initialRouteName: 'drawerStack'
 })
 

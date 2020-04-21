@@ -1,17 +1,44 @@
 import {createStackNavigator} from 'react-navigation-stack';
-import {TouchableHighlight, Text, View} from 'react-native';
+import {TouchableHighlight, Text, View,Image, StyleSheet} from 'react-native';
 import React from 'react';
 
 import DrawerScreen from './drawerScreen';
 
 const DrawerNavigation = createStackNavigator({
     DrawerStack: {screen: DrawerScreen}
+},{
+    headerMode:'none',
 })
 
+function LogoHeader(){
+
+    return(
+        <View>
+            <Text>Waste Not 
+                <Image
+                    source= {require('../imagens/logo.png')}
+                    style={styles.logo}
+                />
+            </Text>
+            
+        </View>
+    )
+
+}
+
 DrawerNavigation.navigationOptions={
-    title:"aaaaaaaaaa",
+    headerTitle: props => <LogoHeader {...props} />,
     headerMode:'float',
-    navigationOptions: ({navigation}) => ({
+    headerRight: <Text></Text>,
+    headerTitleStyle:{
+        textAlign:'center',
+        flex: 1
+    },
+    headerStyle: {
+        backgroundColor: '#aeead3',
+    }, 
+    
+    navigation: {
         headerRight: () => <View>
             <TouchableHighlight
                 onPress={() => {
@@ -24,7 +51,15 @@ DrawerNavigation.navigationOptions={
                     <Text>=</Text>
             </TouchableHighlight>
         </View>
-    })
+    }
 }
+
+const styles = StyleSheet.create({
+    logo: {
+      width: 20,
+      height: 20,
+      borderRadius: 5,
+      }
+})
 
 export default DrawerNavigation;

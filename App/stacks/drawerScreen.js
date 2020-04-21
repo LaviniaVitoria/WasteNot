@@ -5,16 +5,11 @@ import Tela2 from '../telas/tela2';
 import Tela3 from '../telas/tela3';
 
 const DrawerScreen = createDrawerNavigator({
-    Tela1:{
-        screen: Tela1,
-        navigationOptions:{
-            title:"A"
-        }
-    },
+    Tela1:{screen: Tela1},
     Tela2:{screen: Tela2},
     Tela3:{screen: Tela3}
 },{
-    headerMode:'none',
+    headerMode:'none'
 })
 
 export default DrawerScreen;
