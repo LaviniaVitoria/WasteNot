@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 import {View, Text} from 'react-native';
 
-class Tela1 extends Component{
+class Problemas extends Component{
 
     render(){
         return(
             <View>
-                <Text>Tela 1</Text>
+                <Text>deixar mais bonitinho, fazer tipo FAQ</Text>
             </View>
         );
     }
 }
 
-export default Tela1;
+export default Problemas;

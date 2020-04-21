@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import {View, Text} from 'react-native';
 
-class Tela2 extends Component{
+class Registrador extends Component{
     render(){
         return(
             <View>
-                <Text>Tela 2</Text>
+                <Text>Registrador</Text>
             </View>
         );
     }
 }
 
-export default Tela2;
+export default Registrador;

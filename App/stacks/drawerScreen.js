@@ -1,13 +1,19 @@
 import {createDrawerNavigator} from 'react-navigation-drawer';
 
-import Tela1 from '../telas/tela1';
-import Tela2 from '../telas/tela2';
-import Tela3 from '../telas/tela3';
+import Perfil from '../telas/perfil';
+import Loja from '../telas/loja';
+import Registrador from '../telas/registrador';
+import Diy from '../telas/diy';
+import QuemSomos from '../telas/quemSomos';
+import Problemas from '../telas/problemas';
 
 const DrawerScreen = createDrawerNavigator({
-    Tela1:{screen: Tela1},
-    Tela2:{screen: Tela2},
-    Tela3:{screen: Tela3}
+    Perfil:{screen: Perfil},
+    Loja:{screen: Loja},
+    Registrador:{screen: Registrador},
+    Diy:{screen:Diy},
+    QuemSomos:{screen:QuemSomos},
+    Problemas:{screen:Problemas}
 },{
     headerMode:'none'
 })
