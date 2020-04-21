@@ -11,10 +11,10 @@ class Cadastro extends Component {
   render() {
     return (
 
-      <ScrollView contentContainerStyle={styles.container} keyboardShouldPersistTaps="handled">
-        <KeyboardAvoidingView style={styles.container} behavior="padding" enabled keyboardVerticalOffset={0}>
-
-          <Text style={styles.title}> Cadastro </Text>
+      <KeyboardAvoidingView style={{ flex: 1, flexDirection: 'column',justifyContent: 'center',}} behavior="padding" enabled   keyboardVerticalOffset={-170}>
+        <ScrollView>
+          <View style={styles.container}>
+              <Text style={styles.title}> Cadastro </Text>
 
           <Image
           source= {require('../imagens/logo.png')}
@@ -59,9 +59,9 @@ class Cadastro extends Component {
           >
             <Text style={styles.botaoText}>Cadastre-se</Text>
           </TouchableOpacity>
-
-        </KeyboardAvoidingView>
-      </ScrollView>
+          </View>
+        </ScrollView>
+      </KeyboardAvoidingView>
     )
   }
 }
