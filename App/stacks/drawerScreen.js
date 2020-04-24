@@ -21,7 +21,6 @@ HeaderButton=() =>{
 const DrawerScreen = createDrawerNavigator({
     Perfil:{screen: Perfil},
     Loja:{screen: Loja},
-    Registrador:{screen: Registrador},
     Diy:{screen:Diy},
     QuemSomos:{screen:QuemSomos},
     Problemas:{screen:Problemas}
