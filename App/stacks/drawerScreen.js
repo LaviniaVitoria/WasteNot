@@ -12,11 +12,16 @@ import QuemSomos from '../telas/quemSomos';
 import Problemas from '../telas/problemas';
 
 
-HeaderButton=() =>{
+openMenu=() =>{
 
+    alert('era pra abrir o drawer')
     this.props.navigation.openDrawer()
 
 };
+
+openCart=() =>{
+    alert('Seus items')
+}
 
 const DrawerScreen = createDrawerNavigator({
     Perfil:{screen: Perfil},
@@ -24,8 +29,6 @@ const DrawerScreen = createDrawerNavigator({
     Diy:{screen:Diy},
     QuemSomos:{screen:QuemSomos},
     Problemas:{screen:Problemas}
-},{
-   
 })
 
 
@@ -34,8 +37,11 @@ DrawerScreen.navigationOptions= {
     /*headerTitle:*/
     title: 'Waste Not',
     headerMode:'float',
-    headerLeft: () => (<TouchableHighlight onPress={()=>HeaderButton()}>
+    headerLeft: () => (<TouchableHighlight onPress={()=>openMenu()}>
                             <Icon name="navicon" size={40} color="#FFF"/>
+                       </TouchableHighlight>),
+    headerRight: () =>(<TouchableHighlight onPress={()=>openCart()}>
+                            <Icon name="cart" size={40} color="#FFF"/>
                        </TouchableHighlight>),
     headerTitleStyle:{
         textAlign:'center',

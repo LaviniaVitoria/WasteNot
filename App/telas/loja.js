@@ -16,11 +16,9 @@ class Loja extends Component{
     render(){
         return(
             <View>
-                <Text>( informações de cobrança, como cobrar, botão para cadastro de produtos)
- 2.1 Cadastro de produtos
-       (criar do 0)
- 2.2 produtos da empresa
-       (loja padrão com carrinho, carrinho q atualiza o número de produtos conforme a pessoa adiciona coisas</Text>
+                <Text>(informações de cobrança, como cobrar, botão para cadastro de produtos) </Text>
+                <Text>1 Cadastro de produtos (criar do 0) </Text>
+                <Text>2 produtos da empresa (loja padrão com carrinho, carrinho q atualiza o número de produtosconforme a pessoa adiciona coisas)  </Text>
             </View>
         );
     }

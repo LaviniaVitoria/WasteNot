@@ -9,7 +9,7 @@ class Perfil extends Component{
 
         drawerIcon: () => (
             <Icon name="user" size={27}/>
-        )
+        ),
 
     }
 
