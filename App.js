@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button, View, Text, Animated,StatusBar,TouchableOpacity,Alert, StyleSheet,TextInput,Image} from 'react-native';
+import { Text, Animated,TouchableOpacity,Alert, StyleSheet,TextInput,Image} from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
