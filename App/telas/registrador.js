@@ -22,4 +22,16 @@ class Registrador extends Component{
     }
 }
 
+class Teste1 extends Component{
+
+    render(){
+        return(
+        <View>
+        <Text>abcdef </Text>
+    </View>
+)
+    }
+
+}
+
 export default Registrador;
