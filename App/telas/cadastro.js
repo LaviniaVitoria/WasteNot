@@ -4,61 +4,63 @@ import {KeyboardAvoidingView} from 'react-native';
 
 class Cadastro extends Component {
 
-  clicou= () => {
+  checkReg= () => {
     Alert.alert("Feito!", "Cadastro efetuado com sucesso");
   }
 
   render() {
     return (
-
-      <KeyboardAvoidingView style={{ flex: 1, flexDirection: 'column',justifyContent: 'center',}} behavior="padding" enabled   keyboardVerticalOffset={-170}>
+      
+      <KeyboardAvoidingView style={styles.keyboardAvoid}  behavior="padding" enabled keyboardVerticalOffset={-170}>
         <ScrollView>
           <View style={styles.container}>
-              <Text style={styles.title}> Cadastro </Text>
+            <Text style={styles.title}> Cadastro </Text>
 
-          <Image
-          source= {require('../imagens/logo.png')}
-          style={styles.logo}
-          />
+            <Image
+              source= {require('../imagens/logo.png')}
+              style={styles.logo}
+            />
 
-          <TextInput
-          style={styles.input}
-          placeholder="Nome Completo"
-          />
+            <TextInput
+              style={styles.input}
+              placeholder="Nome Completo"
+            />
 
-          <TextInput
-          style={styles.input}
-          placeholder="Cidade"
-          />
+            <TextInput
+              style={styles.input}
+              placeholder="Cidade"
+            />
 
-          <TextInput
-          style={styles.input}
-          placeholder="Estado"
-          />
+            <TextInput
+              style={styles.input}
+              placeholder="Estado"
+            />
 
-          <TextInput
-          style={styles.input}
-          placeholder="Digite seu email"
-          />
+            <TextInput
+              style={styles.input}
+              placeholder="Digite seu email"
+            />
 
-          <TextInput
-          style={styles.input}
-          secureTextEntry={true}
-          placeholder="Digite sua senha"
-          />
+            <TextInput
+              style={styles.input}
+              secureTextEntry={true}
+              placeholder="Digite sua senha"
+            />
 
-          <TextInput
-          style={styles.input}
-          secureTextEntry={true}
-          placeholder="Confirme sua senha"
-          />
+            <TextInput
+              style={styles.input}
+              secureTextEntry={true}
+              placeholder="Confirme sua senha"
+            />
 
-          <TouchableOpacity
-          style={styles.botao}
-          onPress={ () => {this.clicou()} }
-          >
-            <Text style={styles.botaoText}>Cadastre-se</Text>
-          </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.botao}
+              onPress={ () => {this.checkReg()} }
+            >
+              <Text style={styles.botaoText}>
+                Cadastre-se
+              </Text>
+            </TouchableOpacity>
           </View>
         </ScrollView>
       </KeyboardAvoidingView>
@@ -71,6 +73,12 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems: 'center',
     backgroundColor: '#aeead3'
+  },
+
+  keyboardAvoid:{
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'center'
   },
 
   logo: {

@@ -16,7 +16,9 @@ class QuemSomos extends Component{
     render(){
         return(
             <View>
-                <Text>[usar tipo cards]</Text>
+                <Text>
+                    [usar tipo cards]
+                </Text>
             </View>
         );
     }

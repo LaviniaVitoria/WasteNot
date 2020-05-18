@@ -9,14 +9,16 @@ class Perfil extends Component{
 
         drawerIcon: () => (
             <Icon name="user" size={27}/>
-        ),
+        )
 
     }
 
     render(){
         return(
             <View>
-                <Text>(pesquisar sobre conexão bluetooth, foto com capa tipo facebook, grafico que se atualiza, conexão com banco)</Text>
+                <Text>
+                    (pesquisar sobre conexão bluetooth, foto com capa tipo facebook, grafico que se atualiza, conexão com banco)
+                </Text>
             </View>
         );
     }

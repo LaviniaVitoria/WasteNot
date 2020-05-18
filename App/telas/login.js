@@ -19,8 +19,7 @@ const FadeInView = (props) => { // efeito de fade in
         style={{
           ...props.style,
           opacity: fadeAnim,
-        }}
-      >
+        }}>
         {props.children}
       </Animated.View>
     );
@@ -39,7 +38,7 @@ class LoginScreen extends React.Component {
       headerTintColor: 'green',
     };
   
-    clicou= () => {
+    goToMain= () => {
       Alert.alert("Bem-vindo!", "login efetuado com sucesso");
       this.props.navigation.navigate('Stack');
     }
@@ -72,7 +71,7 @@ class LoginScreen extends React.Component {
   
           <TouchableOpacity
             style={styles.botao}
-            onPress={ () => {this.clicou()} }
+            onPress={ () => {this.goToMain()} }
           >
   
             <Text style={styles.botaoText}>Login</Text>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text,StyleSheet} from 'react-native';
+import {View, Text} from 'react-native';
 import Icon from 'react-native-vector-icons/EvilIcons';
 Icon.loadFont();
 
@@ -16,8 +16,13 @@ class Loja extends React.Component{
     render(){
         return(
             <View>
-                <Text>(informações de cobrança, como cobrar)</Text>
-                <Text>produtos da empresa (loja padrão com carrinho, carrinho q atualiza o número de produtos conforme a pessoa adiciona coisas)  </Text>
+                <Text>
+                    (informações de cobrança, como cobrar)
+                </Text>
+                
+                <Text>
+                    produtos da empresa (loja padrão com carrinho, carrinho q atualiza o número de produtos conforme a pessoa adiciona coisas)
+                </Text>
             </View>
         );
     }

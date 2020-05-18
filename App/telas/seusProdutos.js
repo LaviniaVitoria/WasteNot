@@ -1,7 +1,16 @@
 import React, {Component} from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Button} from 'react-native';
+import {createSwitchNavigator} from 'react-navigation';
 import Icon from 'react-native-vector-icons/EvilIcons';
+import { createAppContainer } from 'react-navigation';
 Icon.loadFont();
+
+
+class Main extends Component{
+    render(){
+        return <LojaContainer />;
+    }    
+}
 
 class Registrador extends Component{
 
@@ -17,21 +26,17 @@ class Registrador extends Component{
         return(
             <View>
                 <Text>Cadastro de produtos (criar do 0) </Text>
+
+                <Button title='Abc' onPress={() => this.props.navigation.navigate('')}/>
             </View>
         );
     }
 }
 
-class Teste1 extends Component{
+const lojaSwitchNavigator = createSwitchNavigator({
+    Tela1: Registrador,
+});
 
-    render(){
-        return(
-        <View>
-        <Text>abcdef </Text>
-    </View>
-)
-    }
-
-}
+const LojaContainer = createAppContainer(lojaSwitchNavigator);
 
 export default Registrador;

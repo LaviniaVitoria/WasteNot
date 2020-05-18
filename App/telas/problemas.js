@@ -16,7 +16,9 @@ class Problemas extends Component{
     render(){
         return(
             <View>
-                <Text>deixar mais bonitinho, fazer tipo FAQ</Text>
+                <Text>
+                    deixar mais bonitinho, fazer tipo FAQ
+                </Text>
             </View>
         );
     }
