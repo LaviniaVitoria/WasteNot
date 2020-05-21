@@ -39,7 +39,6 @@ class LoginScreen extends React.Component {
     };
   
     goToMain= () => {
-      Alert.alert("Bem-vindo!", "login efetuado com sucesso");
       this.props.navigation.navigate('Stack');
     }
   

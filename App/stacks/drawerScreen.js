@@ -1,7 +1,8 @@
 import {createDrawerNavigator,DrawerActions} from 'react-navigation-drawer';
-import {TouchableHighlight, View} from 'react-native';
+import {TouchableHighlight, StyleSheet} from 'react-native';
 import React,{Component} from 'react';
 import { createAppContainer } from 'react-navigation';
+import { withBadge } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/EvilIcons';
 Icon.loadFont();
 
@@ -12,7 +13,9 @@ import Diy from '../telas/diy';
 import QuemSomos from '../telas/quemSomos';
 import Problemas from '../telas/problemas';
 
-
+var item=0;
+const CartBadge = withBadge(item) (Icon) 
+ 
 class MainDrawer extends Component{
 
     static navigationOptions= {
@@ -25,8 +28,13 @@ class MainDrawer extends Component{
                 <Icon name="navicon" size={40} color="#FFF"/>
             </TouchableHighlight>),
         headerRight: () =>(
-            <TouchableHighlight onPress={()=>openCart()}>
-                <Icon name="cart" size={40} color="#FFF"/>
+            <TouchableHighlight style={styles.botaoCart} onPress={()=>openCart()}>
+                <CartBadge
+                    type="EvilIcons"
+                    name="cart"
+                    size={40}
+                    color="#FFF"
+                />
             </TouchableHighlight>),
         headerTitleStyle:{
             textAlign:'center',
@@ -43,10 +51,9 @@ class MainDrawer extends Component{
         return(
             openMenu=() =>{
                 alert('era pra abrir o drawer')
-                this.props.navigation.dispatch(DrawerActions.openDrawer());
+                this.props.navigation.openDrawer;
             },
             openCart=()=>{
-                alert('Seus items')
                 this.props.navigation.navigate("Carrinho")
             },
             <AppContainer/>
@@ -54,7 +61,7 @@ class MainDrawer extends Component{
     }
 
 }
-
+    
 const DrawerScreen = createDrawerNavigator({
     Perfil: Perfil,
     Loja: Loja,
@@ -66,5 +73,12 @@ const DrawerScreen = createDrawerNavigator({
 
 const AppContainer = createAppContainer(DrawerScreen);
 
+
+const styles= StyleSheet.create({
+    botaoCart:{
+        flex:1,
+        marginRight:20
+    }
+})
 
 export default MainDrawer;
