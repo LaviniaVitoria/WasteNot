@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
-import {View, Text} from 'react-native';
+import {ScrollView, Text} from 'react-native';
+import { Card, CardTitle, CardContent, CardAction, CardButton, CardImage } from 'react-native-cards';
 import Icon from 'react-native-vector-icons/EvilIcons';
-Icon.loadFont();
+Icon.loadFont(); 
 
 class QuemSomos extends Component{
 
     static navigationOptions = {
-
+        title:'Quem Somos?',
         drawerIcon: () => (
             <Icon name="question" size={27}/>
         )
@@ -15,11 +16,107 @@ class QuemSomos extends Component{
 
     render(){
         return(
-            <View>
-                <Text>
-                    [usar tipo cards]
-                </Text>
-            </View>
+            <ScrollView>
+                <Card>
+                    <CardImage 
+                        source={require('../imagens/lav.png')} //pra imagem ficar bonitinha tem q ser 1024x756
+                        title="Lavinia Vitória"
+                    />
+                    <CardTitle
+                        subtitle="Função"
+                    />
+                    <CardContent text="Responsavel por:" />
+                    <CardAction 
+                        separator={true} 
+                        inColumn={false}>
+                        <CardButton
+                        onPress={() => {}}
+                        title="E-mail de contato"
+                        color="#FEB557"
+                        />
+                    </CardAction>
+                </Card>
+
+                <Card>
+                    <CardImage 
+                        source={require('../imagens/vane.png')} 
+                        title="Vanessa Cypriano"
+                    />
+                    <CardTitle
+                        subtitle="Função"
+                    />
+                    <CardContent text="Responsavel por:" />
+                    <CardAction 
+                        separator={true} 
+                        inColumn={false}>
+                        <CardButton
+                        onPress={() => {}}
+                        title="E-mail de contato"
+                        color="#FEB557"
+                        />
+                    </CardAction>
+                </Card>
+
+                <Card>
+                    <CardImage 
+                        source={require('../imagens/liv.png')} 
+                        title="Lívia Melo"
+                    />
+                    <CardTitle
+                        subtitle="Função"
+                    />
+                    <CardContent text="Responsavel por:" />
+                    <CardAction 
+                        separator={true} 
+                        inColumn={false}>
+                        <CardButton
+                        onPress={() => {}}
+                        title="E-mail de contato"
+                        color="#FEB557"
+                        />
+                    </CardAction>
+                </Card>
+
+                <Card>
+                    <CardImage 
+                        source={require('../imagens/loh.png')} 
+                        title="Lohayne Muriel"
+                    />
+                    <CardTitle
+                        subtitle="Função"
+                    />
+                    <CardContent text="Responsavel por:" />
+                    <CardAction 
+                        separator={true} 
+                        inColumn={false}>
+                        <CardButton
+                        onPress={() => {}}
+                        title="E-mail de contato"
+                        color="#FEB557"
+                        />
+                    </CardAction>
+                </Card>
+
+                <Card>
+                    <CardImage 
+                        source={require('../imagens/lari.png')} 
+                        title="Larissa Farias"
+                    />
+                    <CardTitle
+                        subtitle="Função"
+                    />
+                    <CardContent text="Responsavel por:" />
+                    <CardAction 
+                        separator={true} 
+                        inColumn={false}>
+                        <CardButton
+                        onPress={() => {}}
+                        title="E-mail de contato"
+                        color="#FEB557"
+                        />
+                    </CardAction>
+                </Card>
+            </ScrollView>
         );
     }
 }
