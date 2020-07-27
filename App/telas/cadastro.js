@@ -4,12 +4,12 @@ import {KeyboardAvoidingView} from 'react-native';
 
 class Cadastro extends Component {
 
-  checkReg= () => {
+  checkReg= () => {// função para checar se o registro pode ser efetuado
     Alert.alert("Feito!", "Cadastro efetuado com sucesso");
   }
 
   render() {
-    return (
+    return (// campos para cadastro
       
       <KeyboardAvoidingView style={styles.keyboardAvoid}  behavior="padding" enabled keyboardVerticalOffset={-170}>
         <ScrollView>
@@ -67,6 +67,8 @@ class Cadastro extends Component {
     )
   }
 }
+
+// folha de estilos abaixo
 
 const styles = StyleSheet.create({
   container: {

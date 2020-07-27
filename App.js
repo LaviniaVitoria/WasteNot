@@ -3,16 +3,16 @@ import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
 import Cadastro from "./App/telas/cadastro";
-import StackMenu from './App/telas/StackMenu';
+import Drawer from './App/telas/drawerScreen';
 import LoginScreen from './App/telas/login';
 import Carrinho from './App/telas/carrinho';
 
 
 
-const RootStack = createStackNavigator(
+const RootStack = createStackNavigator(//Main Navigator
   {
     Login: LoginScreen,
-    Stack: StackMenu,
+    Drawer: Drawer,
     TelaCadastro: Cadastro,
     Carrinho: Carrinho,
   },

@@ -30,7 +30,7 @@ const FadeInView = (props) => { // efeito de fade in
   
 class LoginScreen extends React.Component {
   
-    static navigationOptions = {
+    static navigationOptions = {// header inicial
       title: 'Seja Bem-vindo!',
       headerStyle: {
         backgroundColor: '#aeead3',
@@ -38,17 +38,18 @@ class LoginScreen extends React.Component {
       headerTintColor: 'green',
     };
   
-    goToMain= () => {
-      this.props.navigation.navigate('Stack');
+    goToMain= () => {// função de navegação para o app em si, o StackMenu
+      this.props.navigation.navigate('Drawer');
     }
   
-    goToCadastro= () => {
+    goToCadastro= () => {// função de navegação para tela de cadastro
       this.props.navigation.navigate('TelaCadastro');
     }
   
     render() {
       return (
-        <FadeInView style={styles.container}>
+        <FadeInView style={styles.container}> 
+          {/*fade in com a tela inicial*/}
           <Image
             source= {require('../imagens/logo.png')}
             style={styles.logo}
@@ -88,6 +89,8 @@ class LoginScreen extends React.Component {
     }
   
   }
+
+  // folha de estilos abaixo
 
   const styles = StyleSheet.create({
     container: {

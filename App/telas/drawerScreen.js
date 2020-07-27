@@ -1,4 +1,4 @@
-import {createDrawerNavigator,DrawerActions} from 'react-navigation-drawer';
+import {createDrawerNavigator} from 'react-navigation-drawer';
 import {TouchableHighlight, StyleSheet} from 'react-native';
 import React,{Component} from 'react';
 import { createAppContainer } from 'react-navigation';
@@ -14,20 +14,20 @@ import QuemSomos from '../telas/quemSomos';
 import Problemas from '../telas/problemas';
 
 var item=0;
-const CartBadge = withBadge(item) (Icon) 
+const CartBadge = withBadge(item) (Icon) // icon do carrinho com badge, sendo ela a variavel "item"
  
 class MainDrawer extends Component{
 
-    static navigationOptions= {
+    static navigationOptions= {// header
     
         /*headerTitle:*/
         title: 'Waste Not',
         headerMode:'float',
-        headerLeft: () => (
+        headerLeft: () => ( // botão de menu à esquerda 
             <TouchableHighlight onPress={()=>openMenu()}>
                 <Icon name="navicon" size={40} color="#FFF"/>
             </TouchableHighlight>),
-        headerRight: () =>(
+        headerRight: () =>(// botão do carrinho à direita
             <TouchableHighlight style={styles.botaoCart} onPress={()=>openCart()}>
                 <CartBadge
                     type="EvilIcons"
@@ -48,7 +48,7 @@ class MainDrawer extends Component{
     }
 
     render(){
-        return(
+        return(// funções para o onClick dos botões do header 
             openMenu=() =>{
                 alert('era pra abrir o drawer')
                 this.props.navigation.openDrawer;
@@ -62,7 +62,7 @@ class MainDrawer extends Component{
 
 }
     
-const DrawerScreen = createDrawerNavigator({
+const DrawerScreen = createDrawerNavigator({ // criação do Drawer 
     Perfil: Perfil,
     Loja: Loja,
     Registrador: Registrador,
@@ -72,7 +72,6 @@ const DrawerScreen = createDrawerNavigator({
 })
 
 const AppContainer = createAppContainer(DrawerScreen);
-
 
 const styles= StyleSheet.create({
     botaoCart:{
