@@ -1,5 +1,5 @@
-import React, {Component,useState} from 'react';
-import {Text, ScrollView, Modal} from 'react-native';
+import React, {Component} from 'react';
+import {Text, ScrollView} from 'react-native';
 import Icon from 'react-native-vector-icons/EvilIcons';
 import { Card, CardContent, CardAction, CardButton, CardImage } from 'react-native-cards';
 
@@ -15,12 +15,6 @@ class Diy extends Component{
             <Icon name="pencil" size={27}/>
         )
 
-    }
-
-    modal(){
-
-        const [modalAberto, abrirModal] = useState(false);
-        
     }
 
     render(){

@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Image, TouchableOpacity, StyleSheet,Modal} from 'react-native';
+import {View, Text, Image, TouchableOpacity, StyleSheet} from 'react-native';
 import Icon from 'react-native-vector-icons/EvilIcons';
 import { ScrollView } from 'react-native-gesture-handler';
 Icon.loadFont();
@@ -41,7 +41,7 @@ class produtosWasteNot extends React.Component{
                         
                         <Text style={styles.titulo}>
                             Composteira - Waste Not{`\n`}
-                            R$149,99
+                            R$159,99
                         </Text>
 
                         <TouchableOpacity style={styles.botao} onPress={()=>alert('Em desenvolvimento ;)')}>

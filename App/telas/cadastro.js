@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Alert, StyleSheet, Text, View , Image, TextInput, TouchableOpacity, ScrollView} from 'react-native';
+import { StyleSheet, Text, View , Image, TextInput, TouchableOpacity, ScrollView} from 'react-native';
 import {KeyboardAvoidingView} from 'react-native';
 
 class Cadastro extends Component {
 
   checkReg= () => {// função para checar se o registro pode ser efetuado
-    Alert.alert("Feito!", "Cadastro efetuado com sucesso");
+    alert("Feito!", "Cadastro efetuado com sucesso");
   }
 
   render() {

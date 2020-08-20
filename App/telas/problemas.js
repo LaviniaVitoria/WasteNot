@@ -15,7 +15,9 @@ class Problemas extends Component{
 
     render(){
         return(
+ 
             <View style={styles.faq}>
+
                 <TouchableOpacity style={styles.botao} onPress={()=>alert("Em desenvolvimento ;)")}>
                     <Icon name="check" size={27} color='green'/>
                     <Text style={styles.botaoText}>

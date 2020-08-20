@@ -23,7 +23,7 @@ const FadeInView = (props) => { // efeito de fade in
         {props.children}
       </Animated.View>
     );
-  }
+}
   
   
   
