@@ -32,13 +32,15 @@
     "react-native-keyboard-aware-scrollview": "^2.1.0",
     "react-native-reanimated": "~1.4.0",
     "react-native-screens": "2.0.0-alpha.12",
+    "react-native-svg": "9.13.3",
     "react-native-tab-view": "^2.14.0",
     "react-native-vector-icons": "^6.6.0",
     "react-native-web": "~0.11.7",
     "react-navigation": "~4.0.10",
     "react-navigation-drawer": "^2.4.11",
     "react-navigation-stack": "~1.10.3",
-    "react-navigation-tabs": "~2.6.2"
+    "react-navigation-tabs": "~2.6.2",
+    "victory-native": "^35.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

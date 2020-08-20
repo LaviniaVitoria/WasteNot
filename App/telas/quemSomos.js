@@ -36,7 +36,7 @@ class QuemSomos extends Component{
                         <CardButton
                         onPress={() => setEmail("laviniaguazzi@gmail.com")}
                         title="laviniaguazzi@gmail.com"
-                        color="#FEB557"
+                        color="green"
                         />
                     </CardAction>
                 </Card>
@@ -53,7 +53,7 @@ class QuemSomos extends Component{
                         <CardButton
                         onPress={() => setEmail("Vcypriano@outlook.com")}
                         title="Vcypriano@outlook.com"
-                        color="#FEB557"
+                        color="green"
                         />
                     </CardAction>
                 </Card>
@@ -70,7 +70,7 @@ class QuemSomos extends Component{
                         <CardButton
                         onPress={() => setEmail("liviamelo479@gmail.com")}
                         title="liviamelo479@gmail.com"
-                        color="#FEB557"
+                        color="green"
                         />
                     </CardAction>
                 </Card>
@@ -87,7 +87,7 @@ class QuemSomos extends Component{
                         <CardButton
                         onPress={() => setEmail("lohaynemuriel123@gmail.com")}
                         title="lohaynemuriel123@gmail.com"
-                        color="#FEB557"
+                        color="green"
                         />
                     </CardAction>
                 </Card>
@@ -104,7 +104,7 @@ class QuemSomos extends Component{
                         <CardButton
                         onPress={() => setEmail("larissa.lfdm@gmail.com")}
                         title="larissa.lfdm@gmail.com"
-                        color="#FEB557"
+                        color="green"
                         />
                     </CardAction>
                 </Card>

@@ -24,8 +24,10 @@ class Loja extends React.Component{
                     </Text>
 
                     <Text>
-                        produtos da empresa (loja padrão com carrinho, carrinho q atualiza o número de produtos conforme a pessoa adiciona coisas)
+                        produtos dos usuarios, estilo mercado livre(loja padrão com carrinho, carrinho q atualiza o número de produtos conforme a pessoa adiciona coisas)
                     </Text>
+
+                    
                 </View>
             </ScrollView>
         );

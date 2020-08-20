@@ -11,7 +11,7 @@ class Cadastro extends Component {
   render() {
     return (// campos para cadastro
       
-      <KeyboardAvoidingView style={styles.keyboardAvoid}  behavior="padding" enabled keyboardVerticalOffset={-170}>
+      <KeyboardAvoidingView style={styles.keyboardAvoid} enabled >
         <ScrollView>
           <View style={styles.container}>
             <Text style={styles.title}> Cadastro </Text>
@@ -24,6 +24,11 @@ class Cadastro extends Component {
             <TextInput
               style={styles.input}
               placeholder="Nome Completo"
+            />
+
+            <TextInput
+              style={styles.input}
+              placeholder="Data de nascimento"
             />
 
             <TextInput

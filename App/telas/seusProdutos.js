@@ -5,13 +5,6 @@ import Icon from 'react-native-vector-icons/EvilIcons';
 import { createAppContainer } from 'react-navigation';
 Icon.loadFont();
 
-
-class Main extends Component{
-    render(){
-        return <LojaContainer />;
-    }    
-}
-
 class Registrador extends Component{
 
     static navigationOptions = {
@@ -26,17 +19,9 @@ class Registrador extends Component{
         return(
             <View>
                 <Text>Cadastro de produtos (criar do 0) </Text>
-
-                <Button title='Abc' onPress={() => this.props.navigation.navigate('')}/>
             </View>
         );
     }
 }
-
-const lojaSwitchNavigator = createSwitchNavigator({
-    Tela1: Registrador,
-});
-
-const LojaContainer = createAppContainer(lojaSwitchNavigator);
 
 export default Registrador;
