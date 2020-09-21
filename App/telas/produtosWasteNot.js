@@ -26,12 +26,12 @@ class produtosWasteNot extends React.Component{
                         
                         <Text style={styles.titulo}>
                             Sensor para composteira - Waste Not{`\n`}
-                            R$49,99
+                            R$69,99
                         </Text>
 
                         <TouchableOpacity style={styles.botao} onPress={()=>alert('Em desenvolvimento ;)')}>
                             <Text style={styles.textoBotao}>
-                                Comprar
+                                Adicionar ao carrinho
                             </Text>
                          </TouchableOpacity>
                     </View>  
@@ -41,12 +41,12 @@ class produtosWasteNot extends React.Component{
                         
                         <Text style={styles.titulo}>
                             Composteira - Waste Not{`\n`}
-                            R$159,99
+                            R$59,99
                         </Text>
 
                         <TouchableOpacity style={styles.botao} onPress={()=>alert('Em desenvolvimento ;)')}>
                             <Text style={styles.textoBotao}>
-                                Comprar
+                                Adicionar ao carrinho
                             </Text>
                          </TouchableOpacity>
                     </View>
@@ -76,12 +76,12 @@ const styles = StyleSheet.create({
         borderRadius:5
     },
     imagem:{
-        width: 350,
+        width: 400,
         height: 200
     },
     botao:{
         margin:5,
-        width: 100,
+        width: 150,
         height: 40,
         alignSelf: 'flex-end',
         backgroundColor: '#aeead3',

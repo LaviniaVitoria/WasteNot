@@ -18,6 +18,7 @@ import Diy from './App/telas/diy';
 import QuemSomos from './App/telas/quemSomos';
 import Problemas from './App/telas/problemas';
 import ProdutosWN from './App/telas/produtosWasteNot';
+import Inicio from './App/telas/homePage'
 
 
 var item=0;
@@ -25,6 +26,7 @@ const CartBadge = withBadge(item) (Icon) // icon do carrinho com badge, sendo el
 
     
 const DrawerScreen = createDrawerNavigator({ // criação do Drawer 
+  Inicio: Inicio,
   Perfil: Perfil,
   ProdutosWN:ProdutosWN,
   Loja: Loja,

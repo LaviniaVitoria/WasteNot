@@ -10,6 +10,10 @@ export default function header(){
                 <Text style ={styles.headerText}>
                     Waste Not
                 </Text>
+                <Image
+                    source= {require('../imagens/logo.png')}
+                    style={styles.logo}
+                />
             </View>
         </View>
     )

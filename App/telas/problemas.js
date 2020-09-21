@@ -16,6 +16,15 @@ class Problemas extends Component{
     render(){
         return(
  
+            <View>
+                <Text style={{
+        textAlign:"center", fontSize:30, marginTop:100}}>
+FAQ</Text><Text style={styles.title}>{`
+PERGUNTAS FREQUENTES 
+E SUGESTÕES`}
+                </Text>
+            
+
             <View style={styles.faq}>
 
                 <TouchableOpacity style={styles.botao} onPress={()=>alert("Em desenvolvimento ;)")}>
@@ -61,6 +70,7 @@ class Problemas extends Component{
                 </TouchableOpacity>
 
             </View>
+            </View>
         );
     }
 
@@ -73,6 +83,11 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent:'center',
         alignContent:'center'
+    },
+    title:{
+        fontSize:20,
+        marginBottom:200,
+        textAlign:"center"
     },
     botao:{
         backgroundColor: '#aeead3',

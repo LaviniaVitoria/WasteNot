@@ -52,7 +52,7 @@ class Perfil extends Component{
 
                 </View>
 
-                <VictoryChart width={350} height={259} domainPadding={20} theme={VictoryTheme.material}>
+                <VictoryChart width={450} height={270} domainPadding={20} theme={VictoryTheme.material}>
                     <VictoryBar 
                         style={{ data: { fill: "#aeead3" } }}  
                         data={data} 
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     },
     imageBackground:{
         height:170,
-        width:400,
+        width:450,
         resizeMode: 'contain'
     }
 });
