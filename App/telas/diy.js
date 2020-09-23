@@ -1,21 +1,8 @@
 import React, {Component} from 'react';
 import {Text, ScrollView} from 'react-native';
-import Icon from 'react-native-vector-icons/EvilIcons';
 import { Card, CardContent, CardAction, CardButton, CardImage } from 'react-native-cards';
 
-Icon.loadFont();
-
-
-
 class Diy extends Component{
-
-    static navigationOptions = {
-
-        drawerIcon: () => (
-            <Icon name="pencil" size={27}/>
-        )
-
-    }
 
     render(){
         return(

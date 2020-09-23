@@ -1,18 +1,8 @@
 import React from 'react';
 import {View, Text, Image, TouchableOpacity, StyleSheet} from 'react-native';
-import Icon from 'react-native-vector-icons/EvilIcons';
 import { ScrollView } from 'react-native-gesture-handler';
-Icon.loadFont();
  
 class produtosWasteNot extends React.Component{
-
-    static navigationOptions = {
-        title:'Produtos Waste Not',
-        drawerIcon: () => (
-            <Icon name="archive" size={27}/>
-        )
-
-    }
 
     render(){
         return(

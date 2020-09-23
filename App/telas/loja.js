@@ -1,19 +1,9 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
-import Icon from 'react-native-vector-icons/EvilIcons';
 import { ScrollView } from 'react-native-gesture-handler';
-Icon.loadFont();
 
 
 class Loja extends React.Component{
-
-    static navigationOptions = {
-
-        drawerIcon: () => (
-            <Icon name="cart" size={27}/>
-        )
-
-    }
 
     render(){
         return(

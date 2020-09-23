@@ -1,19 +1,7 @@
 import React, {Component} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
-import {createSwitchNavigator} from 'react-navigation';
-import Icon from 'react-native-vector-icons/EvilIcons';
-import { createAppContainer } from 'react-navigation';
-Icon.loadFont();
-
 class Registrador extends Component{
 
-    static navigationOptions = {
-        title:'Seus Produtos',
-        drawerIcon: () => (
-            <Icon name="tag" size={27}/>
-        )
-
-    }
 
     render(){
         return(

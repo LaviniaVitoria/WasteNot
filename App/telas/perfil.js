@@ -1,10 +1,7 @@
 import React, {Component} from 'react';
 import {SafeAreaView, Text, StyleSheet, ScrollView, View, Image, ImageBackground} from 'react-native';
-import Icon from 'react-native-vector-icons/EvilIcons';
 import {TouchableOpacity } from 'react-native-gesture-handler';
 import { VictoryBar, VictoryChart, VictoryTheme } from "victory-native";
-
-Icon.loadFont();
 
 var imagemPerfil = '../imagens/random.jpg';
 var imagemCapa = '../imagens/corante.jpg';
@@ -16,14 +13,6 @@ const data = [
   ];
 
 class Perfil extends Component{
-
-    static navigationOptions = {
-
-        drawerIcon: () => (
-            <Icon name="user" size={27}/>
-        )
-
-    }
 
     render(){
         return(

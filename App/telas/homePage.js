@@ -8,14 +8,6 @@ Icon.loadFont();
 
 class HomePage extends React.Component{
 
-    static navigationOptions = {
-
-        drawerIcon: () => (
-            <Icon name="bell" size={27}/>
-        )
-
-    }
-
     render(){
         return(
             <ScrollView>

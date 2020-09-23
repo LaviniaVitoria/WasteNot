@@ -5,14 +5,6 @@ Icon.loadFont();
 
 class Problemas extends Component{
 
-    static navigationOptions = {
-
-        drawerIcon: () => (
-            <Icon name="chart" size={27}/>
-        )
-
-    }
-
     render(){
         return(
  

@@ -24,71 +24,6 @@ const FadeInView = (props) => { // efeito de fade in
       </Animated.View>
     );
 }
-  
-  
-  
-  
-class LoginScreen extends React.Component {
-  
-    static navigationOptions = {// header inicial
-      title: 'Seja Bem-vindo!',
-      headerStyle: {
-        backgroundColor: '#aeead3',
-      }, 
-      headerTintColor: 'green',
-    };
-  
-    goToMain= () => {// função de navegação para o app em si, o StackMenu
-      this.props.navigation.navigate('Drawer');
-    }
-  
-    goToCadastro= () => {// função de navegação para tela de cadastro
-      this.props.navigation.navigate('TelaCadastro');
-    }
-  
-    render() {
-      return (
-        <FadeInView style={styles.container}> 
-          {/*fade in com a tela inicial*/}
-          <Image
-            source= {require('../imagens/logo.png')}
-            style={styles.logo}
-          />
-  
-          <Text style={styles.title}> Waste Not </Text>
-          <Text style={{color:'green', fontSize:15}}>Evitar o desperdício é o início</Text>
-  
-          <TextInput
-            style={styles.input}
-            placeholder="Digite seu email"
-          />
-  
-          <TextInput
-            style={styles.input}
-            secureTextEntry={true}
-            placeholder="Digite sua senha"
-          />
-  
-          <TouchableOpacity
-            style={styles.botao}
-            onPress={ () => {this.goToMain()} }
-          >
-  
-            <Text style={styles.botaoText}>Login</Text>
-          </TouchableOpacity>
-  
-          <TouchableOpacity
-            onPress={() => this.goToCadastro()}
-          >
-            <Text style={styles.cadastro}>Cadastrar-se</Text>
-          </TouchableOpacity>
-  
-      </FadeInView>
-  
-      )
-    }
-  
-  }
 
   // folha de estilos abaixo
 
@@ -145,4 +80,53 @@ class LoginScreen extends React.Component {
     }
   })
 
-export default LoginScreen;
+export default function login({navigation}){
+  
+  const goToMain= () => {// função de navegação para o app em si, o StackMenu
+    navigation.navigate('Drawer');
+  }
+
+  const goToCadastro= () => {// função de navegação para tela de cadastro
+    navigation.navigate('TelaCadastro');
+  }
+
+  return (
+     <FadeInView style={styles.container}> 
+       {/*fade in com a tela inicial*/}
+       <Image
+         source= {require('../imagens/logo.png')}
+         style={styles.logo}
+       />
+
+       <Text style={styles.title}> Waste Not </Text>
+       <Text style={{color:'green', fontSize:15}}>Evitar o desperdício é o início</Text>
+
+       <TextInput
+         style={styles.input}
+         placeholder="Digite seu email"
+       />
+
+       <TextInput
+         style={styles.input}
+         secureTextEntry={true}
+         placeholder="Digite sua senha"
+       />
+
+       <TouchableOpacity
+         style={styles.botao}
+         onPress={ () => {goToMain()} }
+       >
+
+         <Text style={styles.botaoText}>Login</Text>
+       </TouchableOpacity>
+
+       <TouchableOpacity
+         onPress={() => {goToCadastro()}}
+       >
+         <Text style={styles.cadastro}>Cadastrar-se</Text>
+       </TouchableOpacity>
+
+     </FadeInView>
+
+  )
+};

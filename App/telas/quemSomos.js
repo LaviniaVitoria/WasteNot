@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import {ScrollView, Clipboard} from 'react-native';
 import { Card, CardContent, CardAction, CardButton, CardImage } from 'react-native-cards';
-import Icon from 'react-native-vector-icons/EvilIcons';
-Icon.loadFont(); 
 
 const setEmail = (email) =>{// função para copiar o e-mail para a área de transferência 
 
@@ -12,14 +10,6 @@ const setEmail = (email) =>{// função para copiar o e-mail para a área de tra
 }
 
 class QuemSomos extends Component{
-
-    static navigationOptions = {// nome no drawer
-        title:'Quem Somos?',
-        drawerIcon: () => ( // icone no drawer
-            <Icon name="question" size={27}/>
-        )
-
-    }
 
     render(){
         return( // cards dos membros com: nome/função/e-mail
