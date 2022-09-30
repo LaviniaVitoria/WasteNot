@@ -40,7 +40,7 @@
     "react-navigation-drawer": "^2.4.11",
     "react-navigation-stack": "~1.10.3",
     "react-navigation-tabs": "~2.6.2",
-    "victory-native": "^35.0.1"
+    "victory-native": "^36.6.8"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
